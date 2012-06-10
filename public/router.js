@@ -1,11 +1,8 @@
 define([
-	'jQuery',
-	'underscore',
 	'wrap!Backbone',
-	'view/users/list',
-	'view/users/user'	
+	'javascripts/models/user'
 	],
-	function($, _, Backbone, userList, user){
+	function(Backbone, userList, user){
 		var Router = Backbone.Router.extend({
 			routes: {
 				'/users/list' : 'showUserList',
